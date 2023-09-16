@@ -1,0 +1,42 @@
+<div class="container">
+    <h3 class="text-primary">Event List</h3>
+    <hr>
+  
+    <hr>
+    <table class="table table-striped table-bordered">
+        <tbody>
+            <tr>
+                <th>Organizer Name</th>
+                <th>Event Name</th>
+                <th>Event Description</th>
+                <th>Speaker Info</th>
+                <th>Agenda</th>
+                <th>Registration Link</th>
+                <th>Social Media</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <ng-container *ngFor="let event of events">
+            
+            <tr  *ngIf="selectedValue==='All' || selectedValue===event.name">
+                <td>{{event._id}}</td> 
+                <td>{{event.name}}</td>
+                <td>{{event.desc}}</td>
+                <td>{{event.speaker}}</td>
+                <td>{{event.agenda}}</td>
+                <td>{{event.reg}}</td>
+                <td>{{event.social}}</td>
+                <td>
+                    <img [src]="event.photo" alt="photo" width="50px" height="50px"/>
+                </td>
+                <td>
+                    <button class="btn btn-warning" (click)="onUpdate(event._id)">Update</button>
+                    &nbsp;&nbsp;
+                    <button (click)="onDelete(event._id)" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </ng-container>
+        </tbody>
+    </table>
+</div>
+

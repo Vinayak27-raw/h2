@@ -1,0 +1,102 @@
+.nga-gradient {
+    padding: 0.1rem 0;
+    background: linear-gradient(225deg, #F5F5F5);
+  }
+  
+  .nga-btn-home {
+    font-family: inherit;
+    color: inherit;
+    display: inline-block;
+    line-height: 32px;
+    line-height: 3.2rem;
+    padding: 0 16px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 3px;
+    text-decoration: none;
+    overflow: hidden;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 130px;
+  }
+  
+  .nga-btn-home {
+    background-color: black;
+    padding: 2px 34px 0;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 30px;
+    line-height: 3rem;
+    border-radius: 48px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+    box-sizing: border-box;
+    cursor: pointer
+  }
+  
+  .nga-btn-home:hover {
+    background-color: #09238d;
+    color: yellow;
+    text-decoration: underline;
+  }
+  
+  .nga-card-step {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04), 0 3px 3px rgba(0, 0, 0, .09);
+    margin: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .nga-card-step:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .09), 0 4px 4px rgba(0, 0, 0, .13);
+    border-radius: 5px;
+    color: #0d6efd;
+  
+  }
+  
+  .nga-card-step a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nga-card-step a:hover {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  .text-center video{
+    position: relative;
+    width: 300%;
+    height: 90%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    filter: brightness(10%);
+   
+  }
+       h1 {
+      position: absolute;
+      top: 250px;
+      left: 30px;
+      color: #FFFFFF;
+      width: 35%;
+      font-weight: 600;
+      font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+      }
+  
+      h3{
+        color: #4169e1;
+      }
+  
+      
+  .c1{
+    margin: 0%;
+  }
+    
+.rowf1 card-text{
+  margin-left: 30px;
+}  
+

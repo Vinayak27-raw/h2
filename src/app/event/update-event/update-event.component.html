@@ -1,0 +1,36 @@
+
+<div class="container ud1">
+    <form #empForm="ngForm" (ngSubmit)="onUpdate(empForm.value)" class="col-5">
+    <h3 class="text-info">Update Employee</h3>
+    <div class="form-group">
+        <label>Organizer ID</label>
+        <input type="number" class="form-control" name="_id" [(ngModel)]="event._id">
+    </div>
+    <div class="form-group">
+        <label>Event Name</label>
+        <input type="text" class="form-control" name="name"  [(ngModel)]="event.name">
+    </div>
+    <div class="form-group">
+        <label>Event Description</label>
+        <input type="text" class="form-control" name="desc" [(ngModel)]="event.desc">
+    </div>
+    <div class="form-group">
+        <label>Speaker Information</label>
+        <input type="text" class="form-control" name="speaker"  [(ngModel)]="event.speaker">
+    </div>
+    <div class="form-group">
+        <label>Agenda and Schedule</label>
+        <input type="text" class="form-control" name="agenda"  [(ngModel)]="event.agenda">
+    </div>
+    <div class="form-group">
+        <label>Registration Link</label>
+        <input type="text" class="form-control" name="reg"  [(ngModel)]="event.reg">
+    </div>
+    <div class="form-group">
+        <label>Social Media</label>
+        <input type="text" class="form-control" name="social"  [(ngModel)]="event.social">
+    </div>
+    <br/>
+    <button  class="btn btn-info">Update Event</button>
+</form>
+</div>

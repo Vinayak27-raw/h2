@@ -1,0 +1,43 @@
+<div class="container fs1"> 
+        <form #empform="ngForm" (ngSubmit)="onAdd(empform.value)" class="col-5">
+    <h3 class="text-info">Add Events</h3>
+    <div class="form-group">
+        <label>Organizer ID</label>
+        <input type="number" class="form-control" name="_id" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Event Name</label>
+        <input type="text" class="form-control" name="name" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Event Description</label>
+        <input type="text" class="form-control" name="desc" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Speaker Information</label>
+        <input type="text" class="form-control" name="speaker" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Agenda and Schedule</label>
+        <input type="text" class="form-control" name="agenda" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Registration Link</label>
+        <input type="text" class="form-control" name="reg" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Social Media</label>
+        <input type="text" class="form-control" name="social" ngModel>
+    </div>
+    <div class="form-group">
+        <label>Event Photo</label>
+        <input type = "file" name="photo" ngModel class="form-control" accept=".jpeg,.png,.jpg"
+        (change) = "onFileUpload($event)"
+        >
+    </div>
+
+
+    <br/>
+    <button class="btn btn-info">Add Event</button>
+</form>
+</div>

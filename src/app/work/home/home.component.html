@@ -1,0 +1,83 @@
+<video src="https://v4.cdnpk.net/videvo_files/video/free/video0468/large_watermarked/_import_615fd6c80744e8.53671509_FPpreview.mp4" autoplay="yes" loop="" muted="" data-uk-cover="">
+</video>
+<section class="nga-gradient text-white">
+  <div class="container col-xxl-5 px-4 py-0">
+    <div class="row align-items-center">
+      <div class="col-lg-5 px-3 p-lg-5 pt-lg-3">
+        <div class="text-center">
+          
+          <h1>Connect with Tech with a touch of Conference
+          
+          </h1>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a class="nga-btn-home" routerLink="/about">Get Started</a>
+            </div>
+        </div>
+      </div>
+        <h3>Events Near You, Happening this weekend</h3>
+
+        <div class="row row-cols-1 row-cols-md-4 g-2">
+        
+      
+          <div *ngFor="let card of cards" class="col">
+            <div class="card">
+              <img src="{{card.link}}">
+
+              <div class="card-body">
+                <h5 class="card-title">{{card.title}}</h5>
+                <p class="card-text">{{card.text}}</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{card.host}}</li>
+                <li class="list-group-item">{{card.time}}</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" routerLink="/register" class="card-link">Register Here</a>
+              </div>
+            </div>
+          </div>
+      </div>
+<br>
+
+<hr>
+<br>
+<br>
+
+<div style="justify-content: space-between" class="row">
+ 
+  <h3>How TechVerse Works</h3>
+  <hr>
+  <div class="card d-flex"  style="width: 28rem; margin-left: 25px;">
+    <div class="card-body">
+      <h5 class="card-title"><i class="fa-brands fa-searchengin" style="color: #0a3b8f;"></i> &nbsp; Discover events and groups</h5>
+      <p class="card-text" style="margin-left: 30px;">See who's hosting local events for all the things you love</p>
+      <a href="#" routerLink="/about" class="btn btn-primary" style="margin-left: 25px;">Search events and groups</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 28rem; margin-right: 90px;">
+    <div class="card-body">
+      <h5 class="card-title"><i class="fa-solid fa-plus" style="color: #153875;"></i> &nbsp; Start a group to host events</h5>
+      <p class="card-text" routerLink="/add" style="margin-left: 50px;">Create your own Meetup group, and draw from a community of millions</p>
+      <a href="#" routerLink="/add"  class="btn btn-primary" style="margin-left: 25px;">Start a group</a>
+    </div>
+  </div>
+</div>
+
+ <div>
+  <br>
+  <br>
+  <hr>
+  
+  <h3>Checkout Events that Happened</h3>
+  
+  <hr>
+
+
+<div style="width: 940px; height: 300px; margin-left: 50px; text-align:center; padding:0;">
+	<ng-image-slider #nav [images]="imageObject" [infinite]="true" [autoSlide]="1"
+		[imageSize]="{width: '50%', height: 250}" slideImage="1"></ng-image-slider>
+</div>
+
+</div> 
+

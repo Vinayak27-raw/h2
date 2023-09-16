@@ -1,0 +1,40 @@
+<header class="navbar navbar-expand-lg navbar-dark fixed-top nga-navbar">
+    <nav class="container" aria-label="Main navigation">
+      
+      <a routerLink="/" class="navbar-brand">
+        <img src="https://cdn-icons-png.flaticon.com/128/8640/8640328.png" width="25" height="25" alt="Ganatan Logo">
+        <span class="nga-logo mx-1">TechVerse</span>
+      </a>
+      <form class="d-flex" >
+    <select class=" me-2" aria-label="Search" (change)="onSelectNeighborhood($event)">
+      <option value="" disabled selected>Search</option>
+      <option value="neighbourhood1" >Angular Conference</option>
+      <option value="neighbourhood2">Javascript Meetup</option>
+      <option value="neighbourhood2">AI Transformation</option>
+    </select>
+    <select class=" me-2" aria-label="Neighbourhood or zip">
+      <option value="" disabled selected>Neighbourhood or zip</option>
+      <option value="neighbourhood1">Pune</option>
+      <option value="neighbourhood2">Mumbai</option>
+      <option value="neighbourhood2">Nagpur</option>
+    </select>
+        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search" style="color: #1f4d9e;"></i></button>
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-t=oggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mx-auto">
+        </ul>
+        <ul class="navbar-nav me-auto">
+        </ul>
+        <form class="d-flex">
+          <button type="button" class="btn btn-sm nga-btn-navbar me-2" routerLink="/signup"><i
+              class="fas fa-user-plus me-2"></i>Sign up</button>
+          <button type="button" class="btn btn-sm btn-outline-light me-2" routerLink="/login"><i
+              class="fas fa-sign-in-alt me-2"></i>Login</button>
+        </form>
+      </div>
+    </nav>
+  </header>
