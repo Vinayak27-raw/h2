@@ -12,11 +12,12 @@ import { LoginComponent } from './work/login/login.component';
 import { SignupComponent } from './work/signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NgImageSliderModule } from 'ng-image-slider';
 import { AddEventComponent } from './event/add-event/add-event.component';
 import { EventListComponent } from './event/event-list/event-list.component';
 import { UpdateEventComponent } from './event/update-event/update-event.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TicketpageComponent } from './ticketpage/ticketpage.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     SignupComponent,
     EventListComponent,
     UpdateEventComponent,
-    AddEventComponent
+    AddEventComponent,
+    TicketpageComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     IvyCarouselModule,
     FormsModule,
     ReactiveFormsModule,
-    NgImageSliderModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

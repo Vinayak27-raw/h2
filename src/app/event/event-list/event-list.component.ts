@@ -34,9 +34,10 @@ export class EventListComponent {
     if(response){
       this.eventService.deleteEvent(id).subscribe(data=>{
         console.log(data);
+        this.router.navigate(["/event"])
       });
     }
-    this.router.navigate(["/event"])
+    
     
   }
 

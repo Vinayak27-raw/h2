@@ -1,83 +1,147 @@
-<video src="https://v4.cdnpk.net/videvo_files/video/free/video0468/large_watermarked/_import_615fd6c80744e8.53671509_FPpreview.mp4" autoplay="yes" loop="" muted="" data-uk-cover="">
-</video>
+<div class="video-container">
+  <video src="https://cdn.pixabay.com/video/2022/10/31/137265-766326232_large.mp4" autoplay loop muted playsinline data-uk-cover></video>
+</div>
 <section class="nga-gradient text-white">
-  <div class="container col-xxl-5 px-4 py-0">
+  <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 px-3 p-lg-5 pt-lg-3">
         <div class="text-center">
-          
-          <h1>Connect with Tech with a touch of Conference
-          
-          </h1>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <a class="nga-btn-home" routerLink="/about">Get Started</a>
-            </div>
+          <h1>Connect with Tech with a touch of Conference</h1>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a class="nga-btn-home" routerLink="/about">Get Started</a>
+          </div>
         </div>
       </div>
-        <h3>Events Near You, Happening this weekend</h3>
+      <h3 style="margin-left: 25px;">Explore meet-ups in your favorite Tech Languages</h3>
 
-        <div class="row row-cols-1 row-cols-md-4 g-2">
-        
-      
-          <div *ngFor="let card of cards" class="col">
-            <div class="card">
-              <img src="{{card.link}}">
-
-              <div class="card-body">
-                <h5 class="card-title">{{card.title}}</h5>
-                <p class="card-text">{{card.text}}</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">{{card.host}}</li>
-                <li class="list-group-item">{{card.time}}</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" routerLink="/register" class="card-link">Register Here</a>
-              </div>
+      <div class="row row-cols-2 row-cols-md-4 g-2" style="margin-left: 25px; margin-top: 10px; margin-bottom: 30px ;">
+        <div class="col">
+          <div class="card2">
+            <img src="data:image/png;base64,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" alt="Angular Logo">
+            <div class="card-body">
+              <h5 class="card-title">Angular</h5>
             </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card2" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5VHvAmwLqegdzgRsmYqOqKeyM8_p2ghI0X7Cvvs-CZQ&s" alt="React Logo">
+            <div class="card-body">
+              <h5 class="card-title">React</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card2">
+            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-vuejs-4387636-3640297.png" alt="Vue.js Logo">
+            <div class="card-body">
+              <h5 class="card-title">Vue.js</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card2">
+            <img src="https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png" alt="JavaScript Logo">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIv-wJiBULFewiHP5ohFGkPrynAhick59iQw&s" alt="Django Logo">
+            <div class="card-body">
+              <h5 class="card-title">Django</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card2">
+            <img src="https://t3.ftcdn.net/jpg/06/14/01/52/360_F_614015247_EWZHvC6AAOsaIOepakhyJvMqUu5tpLfY.jpg" alt="LLM Logo">
+            <div class="card-body">
+              <h5 class="card-title">LLM</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card2">
+            <img src="data:image/png;base64,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" alt="Ruby on Rails Logo">
+            <div class="card-body">
+              <h5 class="card-title">Ruby on Rails</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card2">
+            <img src="https://w7.pngwing.com/pngs/87/586/png-transparent-next-js-hd-logo.png" alt="Nextjs Logo">
+            <div class="card-body">
+              <h5 class="card-title">Next.js</h5>
+            </div>
+          </div>
+        </div>
       </div>
-<br>
 
-<hr>
-<br>
-<br>
 
-<div style="justify-content: space-between" class="row">
- 
-  <h3>How TechVerse Works</h3>
-  <hr>
-  <div class="card d-flex"  style="width: 28rem; margin-left: 25px;">
-    <div class="card-body">
-      <h5 class="card-title"><i class="fa-brands fa-searchengin" style="color: #0a3b8f;"></i> &nbsp; Discover events and groups</h5>
-      <p class="card-text" style="margin-left: 30px;">See who's hosting local events for all the things you love</p>
-      <a href="#" routerLink="/about" class="btn btn-primary" style="margin-left: 25px;">Search events and groups</a>
+      <h3 style="margin-left: 25px; margin-top: 10px;">Events Near You, Happening this weekend</h3>
+
+      <div class="row row-cols-1 row-cols-md-4 g-2" style="margin-left: 25px;">
+        <div *ngFor="let card of cards" class="col">
+          <div class="card">
+            <img src="{{card.link}}">
+            <div class="card-body">
+              <h5 class="card-title">{{card.title}}</h5>
+              <p class="card-text">{{card.text}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{card.host}}</li>
+              <li class="list-group-item">{{card.time}}</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" routerLink="/ticket" class="card-link">Register Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="justify-content: space-between" class="row">
+        <div>
+        
+      
+        </div>
+        <div>
+          <br>
+          <br>
+          <hr>
+          <h3 style="margin-left: 25px;">How TechVerse Works</h3>
+          <hr>
+
+    <div class="row">
+      <div class="col-sm-5 mb-3 mb-sm-0">
+        <div class="card" style="margin-left: 25px;">
+          <div class="card-body">
+            <h5 class="card-title">Discover events and groups</h5>
+            <p class="card-text">See who's hosting local events for all the things you love</p>
+            <a href="#" routerLink="/about" class="btn btn-primary">Search events and groups</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5" >
+        <div class="card" style="margin-left: 25px;" >
+          <div class="card-body" >
+            <h5 class="card-title">Start a group to host events</h5>
+            <p class="card-text">Create your own Meetup group, and draw from a community of millions</p>
+            <a href="#" routerLink="/add" class="btn btn-primary">Start a group</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+<!-- </section> -->
 
-  <div class="card" style="width: 28rem; margin-right: 90px;">
-    <div class="card-body">
-      <h5 class="card-title"><i class="fa-solid fa-plus" style="color: #153875;"></i> &nbsp; Start a group to host events</h5>
-      <p class="card-text" routerLink="/add" style="margin-left: 50px;">Create your own Meetup group, and draw from a community of millions</p>
-      <a href="#" routerLink="/add"  class="btn btn-primary" style="margin-left: 25px;">Start a group</a>
-    </div>
-  </div>
-</div>
-
- <div>
+<div>
   <br>
   <br>
   <hr>
-  
-  <h3>Checkout Events that Happened</h3>
-  
-  <hr>
 
 
-<div style="width: 940px; height: 300px; margin-left: 50px; text-align:center; padding:0;">
-	<ng-image-slider #nav [images]="imageObject" [infinite]="true" [autoSlide]="1"
-		[imageSize]="{width: '50%', height: 250}" slideImage="1"></ng-image-slider>
-</div>
 
-</div> 
-
+        

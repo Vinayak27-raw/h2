@@ -8,7 +8,7 @@ import { AddEventComponent } from './event/add-event/add-event.component';
 import { EventListComponent } from './event/event-list/event-list.component';
 import { UpdateEventComponent } from './event/update-event/update-event.component';
 import { AboutComponent } from './work/about/about.component';
-
+import { TicketpageComponent } from './ticketpage/ticketpage.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   
@@ -24,7 +24,9 @@ const routes: Routes = [
 
   {path: 'update/:id', component: UpdateEventComponent},
 
-  {path: 'about', component:AboutComponent}
+  {path: 'about', component:AboutComponent},
+
+  {path: 'ticket', component:TicketpageComponent}
   
 ];
 

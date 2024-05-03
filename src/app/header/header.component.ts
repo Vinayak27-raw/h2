@@ -1,20 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { AuthenticationService } from '../authentication.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  constructor(public authService: AuthenticationService) { }
 
-  onSelectNeighborhood(event: Event): void {
-    const selectedValue = (event.target as HTMLSelectElement).value;
-    if (selectedValue) {
-      this.router.navigate(['https://www.meetup.com/topics/ai/in/pune/', selectedValue]);
-    }
+  ngOnInit(): void {
+  }
+
+  
+  login() {
+    
+    this.authService.login();
   }
 }
 

@@ -22,8 +22,9 @@ base64:any;
     event.photo = this.base64;
     this.eventService.addEvent(event).subscribe(data=>{
       console.log(data);
+      this.router.navigate(["/event"])
     })
-    this.router.navigate(["/event"])
+    
 
 
   }

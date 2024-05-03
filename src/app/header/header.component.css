@@ -1,4 +1,4 @@
-.nga-nav-link {
+ .nga-nav-link {
     color: white;
     border-top: 1px solid #09238d;
     border-bottom: 1px solid #09238d;
@@ -6,16 +6,16 @@
   }
   
   .nga-nav-link:hover {
-    color: yellow;
-    border-top: 1px solid yellow;
-    border-bottom: 1px solid yellow;
+    color: white;
+    border-top: 1px solid rgb(231, 231, 223);
+    border-bottom: 1px solid rgb(250, 250, 247);
   }
   
   
   .nga-navbar {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
-    background-color: #003366;
+    background-color: #020e1ac4;
   }
   
   .nga-logo {
@@ -38,4 +38,6 @@
   .d-flex{
     margin-right: 20px;
   }
+   
+
   
