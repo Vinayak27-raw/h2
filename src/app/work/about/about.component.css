@@ -30,3 +30,19 @@
     display: block;
 }
 
+h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.box {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #f0f0f000;
+  }
+  h5{
+    font-size: 20px;
+    font-weight: 500;
+}
